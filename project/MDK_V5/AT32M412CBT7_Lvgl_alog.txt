@@ -1,0 +1,23 @@
+[project_search_path]: ./
+[map_search_path]: ./
+[project_file_path]: .//AT32M412CBT7_Lvgl.uvprojx
+[ map_file_path]: .//listings/AT32M412CBT7_Lvgl.map
+[parse_keil_map start]: 
+[Found keyword]: ----------Execution Region----------
+[name]:  ER_IROM1 
+[Exec base]: 0x8000000
+[Size]: 0x13128
+[Max]: 0x20000
+[Found keyword]: ----------Execution Region----------
+[name]:  RW_IRAM1 
+[Exec base]: 0x20000000
+[Size]: 0x2478
+[Max]: 0x4000
+[parse_keil_map over printf bar]: 
+  RW_IRAM1 :0x20000000
+   16.00 KB :|¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö_________|   56.98 % (    9.12 KB /    16.00 KB) [7048 B]
+  ER_IROM1 :0x8000000
+  128.00 KB :|¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö_________|   59.60 % (   76.29 KB /   128.00 KB) [52952 B]
+[export csv]: ./AT32M412CBT7_Lvgl_sort_by_flash.csv
+[export csv]: ./AT32M412CBT7_Lvgl_sort_by_ram.csv
+[export xlsx]: AT32M412CBT7_Lvgl_analysis.xlsx

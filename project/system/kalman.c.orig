@@ -1,0 +1,92 @@
+#include "kalman.h"
+
+Kalman kfp;
+void Kalman_Init()
+{
+    kfp.Last_P = 1;
+    kfp.Now_P = 0;
+    kfp.out = 0;
+    kfp.Kg = 0;
+    kfp.Q = 0.000005;
+    kfp.R = 5000;
+}
+
+/**
+ *卡尔曼滤波器
+ *@param 	Kalman *kfp 卡尔曼结构体参数
+ *   			float input 需要滤波的参数的测量值（即传感器的采集值）
+ *@return 滤波后的参数（最优值）
+ */
+float KalmanFilter(Kalman *kfp, float input)
+{
+    //预测协方差方程：k时刻系统估算协方差 = k-1时刻的系统协方差 + 过程噪声协方差
+    kfp->Now_P = kfp->Last_P + kfp->Q;
+    //卡尔曼增益方程：卡尔曼增益 = k时刻系统估算协方差 / （k时刻系统估算协方差 + 观测噪声协方差）
+    kfp->Kg = kfp->Now_P / (kfp->Now_P + kfp->R);
+    //更新最优值方程：k时刻状态变量的最优值 = 状态变量的预测值 + 卡尔曼增益 * （测量值 - 状态变量的预测值）
+    kfp->out = kfp->out + kfp->Kg * (input - kfp->out); //因为这一次的预测值就是上一次的输出值
+    //更新协方差方程: 本次的系统协方差付给 kfp->LastP 威下一次运算准备。
+    kfp->Last_P = (1 - kfp->Kg) * kfp->Now_P;
+    return kfp->out;
+}
+
+
+
+
+
+
+float KalmanFilter_1(float inData)
+
+{
+    static float prevData = 0;                                 //上一个数据
+    static float p = 10, q = 0.001, r = 0.001, kGain = 0;      // q 控制误差 r 控制响应速度
+    p = p + q;
+    kGain = p / (p + r);                                        //计算卡尔曼增益
+    inData = prevData + (kGain * (inData - prevData));          //计算本次滤波估计值
+    p = (1 - kGain) * p;                                        //更新测量方差
+    prevData = inData;
+    return inData;                                             //返回估计值
+}
+
+
+unsigned long kalman_filter_2( unsigned long ADC_Value )
+
+{
+
+float LastData;
+
+float NowData;
+
+float kalman_adc;
+
+static float kalman_adc_old = 0;
+
+static float P1;
+
+static float Q = 0.0003;
+
+static float R = 5;
+
+static float Kg = 0;
+
+static float P = 1;
+
+NowData = ADC_Value;
+
+LastData = kalman_adc_old;
+
+P = P1 + Q;
+
+Kg = P / ( P + R );
+
+kalman_adc = LastData + Kg * ( NowData - kalman_adc_old );
+
+P1 = ( 1 - Kg ) * P;
+
+P = P1;
+
+kalman_adc_old = kalman_adc;
+
+return ( unsigned long )( kalman_adc );
+
+}
