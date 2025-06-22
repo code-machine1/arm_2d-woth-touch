@@ -515,6 +515,75 @@
         </Group>
         <Group>
           <GroupName>device</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>2</IncludeInBuild>
+              <AlwaysBuild>2</AlwaysBuild>
+              <GenerateAssemblyFile>2</GenerateAssemblyFile>
+              <AssembleAssemblyFile>2</AssembleAssemblyFile>
+              <PublicsOnly>2</PublicsOnly>
+              <StopOnExitCode>11</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+              <ComprImg>1</ComprImg>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>0</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <uC99>2</uC99>
+                <uGnu>2</uGnu>
+                <useXO>2</useXO>
+                <v6Lang>0</v6Lang>
+                <v6LangP>0</v6LangP>
+                <vShortEn>2</vShortEn>
+                <vShortWch>2</vShortWch>
+                <v6Lto>0</v6Lto>
+                <v6WtE>2</v6WtE>
+                <v6Rtti>2</v6Rtti>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <useXO>2</useXO>
+                <ClangAsOpt>0</ClangAsOpt>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
           <Files>
             <File>
               <FileName>at32_Usart.c</FileName>
@@ -567,6 +636,12 @@
   <RTE>
     <apis/>
     <components>
+      <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos">
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </component>
       <component Cclass="Acceleration" Cgroup="Arm-2D Extras" Csub="Controls" Cvendor="ARM" Cversion="2.6.9" condition="Arm-2D-Controls">
         <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
         <targetInfos>
@@ -574,6 +649,12 @@
         </targetInfos>
       </component>
       <component Cclass="Acceleration" Cgroup="Arm-2D Extras" Csub="LCD ASCII Printf" Cvendor="ARM" Cversion="2.13.1" condition="Arm-2D-Printf">
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Acceleration" Cgroup="Arm-2D Extras" Csub="Loaders" Cvendor="ARM" Cversion="2.1.1" condition="Arm-2D-Loaders">
         <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
         <targetInfos>
           <targetInfo name="AT32M412CBT7_Lvgl"/>
@@ -647,6 +728,32 @@
       </component>
     </components>
     <files>
+      <file attr="config" category="sourceC" name="examples\demos\Battleship.c" version="2.1.2">
+        <instance index="0" removed="1">RTE\Acceleration\Battleship.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="other" name="examples\demos\Rickrolling75.jpg" version="1.0.2">
+        <instance index="0" removed="1">RTE\Acceleration\Rickrolling75.jpg</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Showing Animation with TJpgDec" Cvendor="ARM" Cversion="1.0.2" condition="Arm-2D-Demo-TJpgDec-Loader"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\SquareDigits.c" version="1.0.3">
+        <instance index="0">RTE\Acceleration\SquareDigits.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\album_cover.c" version="1.2.0">
+        <instance index="0" removed="1">RTE\Acceleration\album_cover.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Music Player" Cvendor="ARM" Cversion="1.2.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
       <file attr="config" category="sourceC" name="Library\Source\arm_2d.c" version="1.5.0">
         <instance index="0">RTE\Acceleration\arm_2d.c</instance>
         <component Cclass="Acceleration" Cgroup="Arm-2D" Csub="Core" Cvendor="ARM" Cversion="1.2.4-dev" condition="CMSIS-DSP"/>
@@ -694,6 +801,416 @@
         <targetInfos>
           <targetInfo name="AT32M412CBT7_Lvgl"/>
         </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_atom.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_atom.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Atom" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_atom.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_atom.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Atom" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_audiomark.c" version="1.0.4">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_audiomark.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="AudioMark" Cvendor="ARM" Cversion="1.0.4" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_audiomark.h" version="1.0.4">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_audiomark.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="AudioMark" Cvendor="ARM" Cversion="1.0.4" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_balls.c" version="1.0.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_balls.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Balls" Cvendor="ARM" Cversion="1.0.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_balls.h" version="1.0.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_balls.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Balls" Cvendor="ARM" Cversion="1.0.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_basics.c" version="1.4.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_basics.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Basics" Cvendor="ARM" Cversion="1.4.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_basics.h" version="1.4.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_basics.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Basics" Cvendor="ARM" Cversion="1.4.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_compass.c" version="1.2.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_compass.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Compass" Cvendor="ARM" Cversion="1.2.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_compass.h" version="1.2.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_compass.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Compass" Cvendor="ARM" Cversion="1.2.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_console_window.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_console_window.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="ConsoleWindow" Cvendor="ARM" Cversion="1.1.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_console_window.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_console_window.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="ConsoleWindow" Cvendor="ARM" Cversion="1.1.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_filters.c" version="1.2.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_filters.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Filters" Cvendor="ARM" Cversion="1.2.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_filters.h" version="1.2.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_filters.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Filters" Cvendor="ARM" Cversion="1.2.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_gas_gauge.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_gas_gauge.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Gas Gauge" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_gas_gauge.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_gas_gauge.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Gas Gauge" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_hollow_out_list.c" version="1.2.3">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_hollow_out_list.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Hollow Out List" Cvendor="ARM" Cversion="1.2.3" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_hollow_out_list.h" version="1.2.3">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_hollow_out_list.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Hollow Out List" Cvendor="ARM" Cversion="1.2.3" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_iir_blur.c" version="1.0.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_iir_blur.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="IIR Blur" Cvendor="ARM" Cversion="1.0.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_iir_blur.h" version="1.0.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_iir_blur.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="IIR Blur" Cvendor="ARM" Cversion="1.0.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_listview.c" version="1.0.3">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_listview.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Listview" Cvendor="ARM" Cversion="1.0.3" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_listview.h" version="1.0.3">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_listview.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Listview" Cvendor="ARM" Cversion="1.0.3" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_matrix.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_matrix.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Matrix" Cvendor="ARM" Cversion="1.1.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_matrix.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_matrix.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Matrix" Cvendor="ARM" Cversion="1.1.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_menu.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_menu.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Menu" Cvendor="ARM" Cversion="1.1.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_menu.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_menu.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Menu" Cvendor="ARM" Cversion="1.1.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\arm_2d_scene_mono_clock.c" version="1.0.3">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_clock.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="examples\demos\monochrome\arm_2d_scene_mono_clock.h" version="1.0.3">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_clock.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\arm_2d_scene_mono_histogram.c" version="1.1.1">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_histogram.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="examples\demos\monochrome\arm_2d_scene_mono_histogram.h" version="1.1.1">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_histogram.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\arm_2d_scene_mono_icon_menu.c" version="1.2.2">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_icon_menu.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="examples\demos\monochrome\arm_2d_scene_mono_icon_menu.h" version="1.2.2">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_icon_menu.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\arm_2d_scene_mono_list.c" version="1.0.3">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_list.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="examples\demos\monochrome\arm_2d_scene_mono_list.h" version="1.0.3">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_list.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\arm_2d_scene_mono_loading.c" version="1.2.3">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_loading.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="examples\demos\monochrome\arm_2d_scene_mono_loading.h" version="1.2.3">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_loading.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\monochrome\arm_2d_scene_mono_tracking_list.c" version="1.1.2">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_tracking_list.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="examples\demos\monochrome\arm_2d_scene_mono_tracking_list.h" version="1.1.2">
+        <instance index="0">RTE\Acceleration\arm_2d_scene_mono_tracking_list.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Monochrome" Cvendor="ARM" Cversion="1.6.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_music_player.c" version="1.2.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_music_player.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Music Player" Cvendor="ARM" Cversion="1.2.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_music_player.h" version="1.2.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_music_player.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Music Player" Cvendor="ARM" Cversion="1.2.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_panel.c" version="1.2.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_panel.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Panel" Cvendor="ARM" Cversion="1.2.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_panel.h" version="1.2.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_panel.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Panel" Cvendor="ARM" Cversion="1.2.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_progress_status.c" version="2.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_progress_status.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Progress and Status" Cvendor="ARM" Cversion="2.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_progress_status.h" version="2.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_progress_status.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Progress and Status" Cvendor="ARM" Cversion="2.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_rickrolling.c" version="1.0.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_rickrolling.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Showing Animation with TJpgDec" Cvendor="ARM" Cversion="1.0.2" condition="Arm-2D-Demo-TJpgDec-Loader"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_rickrolling.h" version="1.0.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_rickrolling.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Showing Animation with TJpgDec" Cvendor="ARM" Cversion="1.0.2" condition="Arm-2D-Demo-TJpgDec-Loader"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_ruler.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_ruler.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Ruler" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_ruler.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_ruler.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Ruler" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_text_reader.c" version="1.1.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_text_reader.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Text Reader" Cvendor="ARM" Cversion="1.1.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_text_reader.h" version="1.1.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_text_reader.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Text Reader" Cvendor="ARM" Cversion="1.1.0" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_transform.c" version="2.1.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_transform.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Transform" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_transform.h" version="2.1.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_transform.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Transform" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_user_defined_opcode.c" version="2.1.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_user_defined_opcode.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_user_defined_opcode.h" version="2.1.2">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_user_defined_opcode.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_virtual_resource.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_virtual_resource.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Virtual Resources" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_virtual_resource.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_virtual_resource.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Virtual Resources" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\arm_2d_scene_watch_face_01.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_watch_face_01.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Watch Face 01" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\demos\arm_2d_scene_watch_face_01.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_scene_watch_face_01.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Watch Face 01" Cvendor="ARM" Cversion="1.2.1" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\common\opcodes\arm_2d_user_opcode_draw_circle.c" version="1.0.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_user_opcode_draw_circle.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\common\opcodes\arm_2d_user_opcode_draw_circle.h" version="1.0.0">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_user_opcode_draw_circle.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="sourceC" name="examples\common\opcodes\arm_2d_user_opcode_draw_line.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_user_opcode_draw_line.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\common\opcodes\arm_2d_user_opcode_draw_line.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\Acceleration\arm_2d_user_opcode_draw_line.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="User Defined OPCODE" Cvendor="ARM" Cversion="2.1.2" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="examples\common\loader\tjpgd_loader\arm_tjpgd_cfg.h" version="1.1.0">
+        <instance index="0">RTE\Acceleration\arm_tjpgd_cfg.h</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Extras" Csub="Loaders" Cvendor="ARM" Cversion="2.1.1" condition="Arm-2D-Loaders"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos>
+          <targetInfo name="AT32M412CBT7_Lvgl"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="sourceC" name="examples\demos\hollow_out_mask.c" version="1.2.3">
+        <instance index="0" removed="1">RTE\Acceleration\hollow_out_mask.c</instance>
+        <component Cclass="Acceleration" Cgroup="Arm-2D Demos" Csub="Hollow Out List" Cvendor="ARM" Cversion="1.2.3" condition="Arm-2D-Demos"/>
+        <package name="Arm-2D" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.4-dev51+g522806b"/>
+        <targetInfos/>
       </file>
       <file attr="config" category="utility" name="tools\img2c.py" version="1.2.5">
         <instance index="0">RTE\Acceleration\img2c.py</instance>

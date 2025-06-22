@@ -44,6 +44,7 @@
 
 #include "arm_2d.h"
 #include "arm_2d_disp_adapters.h"
+#include "arm_2d_scene_mono_clock.h"
 /* add user code end private includes */
 
 /* private typedef -----------------------------------------------------------*/
@@ -145,22 +146,29 @@ int main(void)
     SystemCoreClock = 22514000ul;
     init_cycle_counter(true);
     tmt_init();
-    tmt.create(touch_task, 1);
+    //tmt.create(touch_task, 1);
 	LCD_Init();
 	LCD_Clear(WHITE);
-    //XPT2046_TouchInit();
+    XPT2046_TouchInit();
     
     arm_irq_safe{
     arm_2d_init();
     }
     
     disp_adapter0_init();
+    
+    arm_2d_scene_mono_clock_init(&DISP0_ADAPTER);
+ 
+    arm_2d_scene_player_switch_to_next_scene(&DISP0_ADAPTER);
+    
+    
     /* add user code end 2 */
 
   while(1)
   {
     /* add user code begin 3 */
         tmt.run();
+      disp_adapter0_task();
     /* add user code end 3 */
   }
 }
@@ -168,7 +176,7 @@ int main(void)
   /* add user code begin 4 */
 void touch_task(void)
 {
-    disp_adapter0_task();
+    
     #if 0
     fuck = XPT2046_ReadXY();
 	

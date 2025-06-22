@@ -15,10 +15,15 @@
  */
 #define CMSIS_device_header "at32m412_416.h"
 
+/* ARM::Acceleration:Arm-2D Demos:Monochrome@1.6.1 */
+#define RTE_Acceleration_Arm_2D_Demos_Monochrome
 /* ARM::Acceleration:Arm-2D Extras:Controls@2.6.9 */
 #define RTE_Acceleration_Arm_2D_Extra_Controls
 /* ARM::Acceleration:Arm-2D Extras:LCD ASCII Printf@2.13.1 */
 #define RTE_Acceleration_Arm_2D_Extra_LCD_printf
+/* ARM::Acceleration:Arm-2D Extras:Loaders@2.1.1 */
+#define RTE_Acceleration_Arm_2D_Extra_Loaders
+    #define RTE_Acceleration_Arm_2D_Extra_TJpgDec_Loader
 /* ARM::Acceleration:Arm-2D Helper:Display Adapter@3.4.0 */
 #define RTE_Acceleration_Arm_2D_Helper_Disp_Adapter0
     #define __RTE_ACCELERATION_ARM_2D_HELPER_DISP_ADAPTER0__  /* this macro is deprecated, please use the macro above in your code */

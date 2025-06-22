@@ -93,4 +93,28 @@
   C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\Helper\Include\.\arm_2d_helper_control.h \
   C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\Helper\Include\arm_2d_helper_built_in.h \
   C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\Helper\Include\busy_wheel.h \
-  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\Helper\Include\console_box.h
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\Helper\Include\console_box.h \
+  RTE\Acceleration\arm_2d_scene_mono_clock.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\arm_2d_example_controls.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\__common.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\spinning_wheel.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\progress_bar_drill.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\progress_bar_flowing.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\progress_bar_simple.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\progress_bar_round.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\.\__common.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\__simple_list.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\Helper\Include\arm_2d_helper_list.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\number_list.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\text_list.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\icon_list.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\progress_wheel.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\list_view.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\battery_gasgauge.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\dynamic_nebula.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\histogram.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\spin_zoom_widget.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\cloudy_glass.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\meter_pointer.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\text_tracking_list.h \
+  C:\Users\18067\AppData\Local\Arm\Packs\ARM\Arm-2D\1.2.4-dev51\examples\common\controls\.\text_box.h
